@@ -85,14 +85,14 @@ main {
 
  .h2 {
     font-weight: bold;
-    font-size: 40px;
+    font-size: 50px;
 }
 
 #images img {
     max-width: 100%;
 }
 
-[class*="col-"] {
+#images [class*="col-"] {
     margin-bottom: 30px;
 }
 
@@ -100,6 +100,10 @@ main {
     background-color: #1BBC9B;
     color: white;
     padding: 70px 0;
+}
+
+#features [class*="col-"] {
+    margin-bottom: 30px;
 }
 
 #features .row p {
@@ -119,6 +123,51 @@ main {
     background-color: white;
     color: black;
 }
- #features .fa-download {
+
+#features .fa-download {
      margin-right: 15px;
+}
+
+ #contact {
+     background-color: white;
+     color: black;
+     padding: 70px 0;
+ }
+
+ #contact .separatore::before,
+ #contact .separatore::after {
+     background-color: black;
+ }
+
+ #contact .form-control {
+     font-size: 25px;
+     padding-top: 50px;
+     padding-bottom: 70px;
+     border: none;
+     box-shadow: none;
+ }
+
+ #contact .form-group {
+     border-bottom: 1px solid #e9ecef;
+ }
+
+ #contact textarea {
+     resize: none;
+ }
+
+ #send-button {
+     text-align: left;
+     border-bottom: 0;
+ }
+ #send-button .btn {
+     font-size: 21px;
+     padding: 15px 25px;
+     border: 2px solid white;
+     border-radius: 8px;
+     background-color: #1BBC9B;
+     color: white;
+ }
+
+ #send-button .btn:hover {
+     background-color: #159a80;
  }
