@@ -1,50 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bootstrap Freelancer</title>
+        <script src="https://kit.fontawesome.com/1e3e5f2200.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
-        <title>Start Bootstrap</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <header>
-            <div class="row">
+            <nav class="navbar navbar-default navbar-fixed-top">
                 <div class="container">
-                    <div class="col-xs-5">
-                        <ul class="nav">
-                            <li class="h2">START BOOTSTRAP</li>
-                        </ul>
+
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Start Bootstrap</a>
                     </div>
-                    <div class="col-xs-4 col-xs-offset-3">
-                        <ul class="list-inline">
-                            <li>PORTFOGLIO</li>
-                            <li>ABOUT</li>
-                            <li>CONTACT</li>
+
+
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="#">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#">About</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
-            </div>
-
-
-            <div class="jumbotron text-center">
-                <div class="container">
-                    <div class="col-xs-12">
-                        <img src="img/avatar.svg"  alt="avatar">
-                      <h1>START BOOTSTRAP</h1>
-                      <div class="col-xs-2 col-xs-offset-5">
-                          <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                      </div>
-                      <div class="col-xs-offset-12">
-                          &nbsp;
-                      </div>
-                      <div class="col-xs-12">
-                          <p class="h2">Graphic artist - Web design - Illustrator</p
-                      </div>
-                  </div>
-                </div>
-            </div>
-
+            </nav>
         </header>
+        <main>
+            <section class="jumbotron text-center">
+                <div class="container">
+                    <img class="img-responsive center-block" src="img/avatar.svg" alt="Avatar">
+                    <h1 class="text-uppercase">Start Bootstrap</h1>
+                    <div class="separatore center-block">
+                        <i class="fas fa-star fa-2x"></i>
+                    </div>
+                    <p>Graphic Artist - Web Designer - Illustrator</p>
+                </div>
+            </section>
 
+            <section id="images">
+                <div class="container text-center">
+                    <p class="h2 text-uppercase font-weight-bold">Portfoglio</p>
+                    <div class="separatore center-block black">
+                        <i class="fas fa-star fa-2x"></i>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <img src="images/cabin.png" alt="cabin">
+                        </div>
+                        <div class="col-xs-4">
+                            <img src="images/cake.png" alt="cake">
+
+                        </div>
+                        <div class="col-xs-4">
+                            <img src="images/circus.png" alt="circus">
+                        </div>
+                        <div class="col-xs-4">
+                            <img src="images/game.png" alt="game">
+
+                        </div>
+                        <div class="col-xs-4">
+                            <img src="images/safe.png" alt="safe">
+
+                        </div>
+                        <div class="col-xs-4">
+                            <img src="images/submarine.png" alt="submarine">
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </section>
+        </main>
     </body>
 </html>
